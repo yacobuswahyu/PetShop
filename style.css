@@ -1,122 +1,144 @@
-.logo-dog {
+.nav-link {
+  margin-right: 20px;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  margin-bottom: -5px;
+}
+.btn {
+  border-radius: 30px;
+  font-weight: bold;
+}
+.dog {
   box-shadow: 0px 5px 8px 0px rgb(110, 110, 110);
+  width: 50px;
+  height: 50px;
 }
 .nav-cnt {
-  box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
+  box-shadow: 0px 2px 15px 0px rgb(0, 0, 0);
 }
-.tombol {
-  border-radius: 30px;
-}
-.cnt-fld {
-  background-image: url(image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png);
+.gbr {
+  background-image: url("image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png");
   background-size: cover;
-  width: 600px;
-  height: 350px;
-}
-.cnt-content {
-  height: 1200px;
-  margin: auto;
-}
-.m-cnt {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.card {
-  border: 1px solid blue;
-  box-shadow: 0px 3px 15px 0px rgb(0, 0, 0);
-  width: 230px;
-  height: 250px;
-  transition: 1s;
-}
-.card:hover {
-  border: 1px solid blue;
-  box-shadow: 0px 3px 15px 0px rgb(0, 0, 0);
-  width: 240px;
-  height: 260px;
-}
-.cnt-tips {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-tips {
-  background-image: url(image/baptist-standaert-mx0DEnfYxic-unsplash\ 1.png);
-  opacity: 0.4;
-  width: 400px;
-  height: 400px;
-}
-.tips {
+  background-position: center;
   margin-top: -400px;
-  width: 400px;
+  z-index: -9999;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0);
-  color: rgb(229, 255, 0);
+}
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+.artikel {
+  display: inline;
+  align-items: center;
+  width: 340px;
+  height: 350px;
   text-align: center;
+  margin-top: 100px;
 }
 .im-trainer {
   width: 150px;
   height: 150px;
   box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
-  transition: 1s;
+  transform: scale(1);
+  transition: 0.3s ease;
 }
 .im-trainer:hover {
-  box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
-  width: 160px;
-  height: 160px;
+  transform: scale(1.05);
 }
 .cnt-footer {
-  text-align: center;
+  margin-left: 10px;
+  text-align: start;
 }
-@media (min-width: 576px) {
-  .cnt-content {
-    height: 600px;
+@media (max-width: 1024px) {
+  .nav-cnt {
+    box-shadow: 0px 2px 15px 0px rgb(0, 0, 0);
   }
-  .m-cnt {
-    margin-bottom: 30px;
+  .nav-link {
+    margin-right: 20px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin-bottom: -5px;
+  }
+  .gbr {
+    display: none;
+    background-image: url("image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -9999;
+    height: 400px;
+  }
+  .artikel {
+    display: inline;
+    align-items: center;
+    width: 340px;
+    height: 350px;
+    text-align: start;
+  }
+  .im-trainer {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  .im-trainer:hover {
+    transform: scale(1.05);
   }
   .cnt-footer {
-    text-align: start;
-  }
-  .cnt-fld {
-    background-image: url(image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png);
-    background-size: cover;
-    width: auto;
-    height: 442px;
-  }
-  .img-tips {
-    background-image: url(image/baptist-standaert-mx0DEnfYxic-unsplash\ 1.png);
-    opacity: 100%;
-    width: 400px;
-    height: 400px;
-  }
-  .tips {
-    margin-top: 0px;
-    width: 400px;
-    height: 400px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    text-align: center;
   }
 }
-@media (min-width: 577px) {
-  .cnt-fld {
-    background-image: url(image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png);
+@media (max-width: 578px) {
+  .nav-cnt {
+    box-shadow: 0px 2px 15px 0px rgb(0, 0, 0);
+  }
+  .nav-link {
+    margin-right: 20px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
+  .gbr {
+    background-image: url("image/cristian-castillo-73pyV0JJOmE-unsplash\ 1.png");
     background-size: cover;
-    width: auto;
-    height: 442px;
-  }
-  .cnt-content {
-    height: 600px;
-  }
-  .m-cnt {
-    margin-bottom: 30px;
-  }
-  .tips {
-    margin-top: 0px;
-    width: fit-content;
+    background-position: center;
+    z-index: -9999;
     height: 400px;
-    background-color: rgba(255, 255, 255, 0.199);
-    color: rgb(255, 255, 255);
-    text-align: start;
+  }
+  .im-trainer {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 5px 15px 0px rgb(0, 0, 0);
+    transform: scale(1);
+    transition: 0.3s ease;
+  }
+  .im-trainer:hover {
+    transform: scale(1.05);
+  }
+  .cnt-footer {
+    margin-left: 10px;
+    text-align: center;
+  }
+  .artikel {
+    display: inline;
+    align-items: center;
+    margin-top: 100px;
+    width: 300px;
+    height: 320px;
+    text-align: center;
   }
 }
