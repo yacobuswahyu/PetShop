@@ -2,115 +2,161 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <title>Pet Shop</title>
+
+    <!-- Akhir CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- End Bootstrap -->
+
+    <!-- Fonts -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+    <!-- End Fonts -->
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- End Font Awesome -->
+
+    <!-- JS -->
+
+    <!-- <script src="./asset/script.js"></script> -->
+    <!-- Akhir JS -->
+
+    <title>Landing Page</title>
   </head>
 
-  <!-- Navbar -->
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white nav-cnt fixed-top">
-      <div class="container fw-bold">
-        <img src="image/logo.jpg" style="width: 50px; height: 50px" alt="logo" class="rounded-circle me-3 logo-dog" />
-        <a class="navbar-brand" href="#">Pet Shop</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white nav-cnt fixed-top">
+      <div class="container">
+        <a class="logo"><img src="image/doglogo.jpg" class="dog rounded-circle me-2" alt=""></a>
+        <a class="navbar-brand fw-bold" href="#">PetShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a class="nav-link active me-3" href="#">Home</a>
-            <a class="nav-link active me-3" href="#">About</a>
-            <a class="nav-link active me-3" href="#">Shop</a>
-            <a href="#" class="btn bg-primary tombol text-white ms-5">Sign In</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-white">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold me-3" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold me-3" aria-current="page" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold me-3" aria-current="page" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary rounded-pill text-white fw-bold" href="#" >Sign In</a>
+            </li>
         </div>
       </div>
     </nav>
-    <div class="container-fluid cnt-fld d-flex align-items-center">
-      <div class="container">
-        <div class="col-lg-12 col-md-12 col-sm-12" data-aos="fade-up-right">
-          <h1 class="text-start txt-h1 text-white fw-bold">
-            Welcome To <br />
-            Pet Center !<br />
-            Request <br />Service ?
-          </h1>
-          <button class="btn bg-primary tombol text-white fw-bold mt-3">Join Now</button>
-        </div>
-      </div>
-    </div>
-    <!-- End Navbar -->
+    <!-- Akhir Navbar -->
 
-    <!-- Tips -->
-    <div class="container cnt-content d-flex justify-content-around align-items-center">
-      <div class="row d-flex justify-content-around align-items-center text-center">
-        <div class="col-lg-3 col-md-6 col-sm-12 m-cnt" data-aos="fade-up-right">
-          <div class="card">
-            <a href="#"><i class="fas fa-cat fa-7x mt-3"></i></a>
-            <div class="card-body">
-              <h5 class="card-title">Cara Melatih</h5>
-              <p>cara melatih hewan peliharaan agar pintar</p>
-            </div>
-          </div>
+    <!-- Container-Fluid -->
+    <div class="container-fluid pt-5">
+      <div class="row d-flex align-items-center text-center justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-5">
+          <h1 class="text-center">
+            Welcome To 
+            Pet Center !<br>
+            Cari Kebutuhan ? 
+          </h1>
+          <p class="text-center">
+            Kami menyediakan berbagai kebutuhan<br />
+            perlengkapan hewan peliharaan
+          </p>
+          <button class="btn btn-primary text-center fw-bold rounded-pill mb-5 mt-2 text-white">Shop Now</button>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 m-cnt" data-aos="fade-up-right">
-          <div class="card">
-            <a href="#"><i class="fas fa-utensils fa-7x mt-3"></i></a>
-            <div class="card-body">
-              <h5 class="card-title">Tips & Trik</h5>
-              <p>cara merawat peliharaan agar siap untuk show</p>
-            </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 gbr"></div>
+      </div>
+    </div>
+    <!-- Akhir Container-Fluid -->
+
+    <!-- content -->
+    <div class="container-fluid text-center py-5">
+      <h2>Tips & Trik Merawat Hewan Yang Baik</h2>
+      <div class="container cnt-trainer py-3">
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-right">
+            <a href="" class="text-decoration-none text-dark">
+              <img src="image/dogmd.jpg" class="rounded-3 im-trainer" alt="" />
+              <h5 class="fw-bold mt-3">Merawat Anjing</h5>
+              <p>
+                Cara merawat anjing dengan benar<br />
+                dan melatih anjing
+              </p></a
+            >
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 m-cnt" data-aos="fade-up-left">
-          <div class="card">
-            <a href="#"><i class="fas fa-dog fa-7x mt-3"></i></a>
-            <div class="card-body">
-              <h5 class="card-title">Kandang Hewan</h5>
-              <p>macam -macam kandang hewan besi ukuran 2x1m</p>
-            </div>
+          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
+            <a href="" class="text-decoration-none text-dark">
+              <img src="image/catsr.jpg" class="rounded-3 im-trainer" alt="" />
+              <h5 class="fw-bold mt-3">Merawat Kucing</h5>
+              <p>
+                Cara merawat kucing dengan benar<br />
+                dan melatih kucing
+              </p></a
+            >
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 m-cnt" data-aos="fade-up-left">
-          <div class="card">
-            <a href="#"><i class="fas fa-pills fa-7x mt-3"></i></a>
-            <div class="card-body">
-              <h5 class="card-title">Suplemen Hewan</h5>
-              <p>suplemen yang bagus untuk menjaga kesehatan</p>
-            </div>
+          <div class="col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in-left">
+            <a href="" class="text-decoration-none text-dark">
+              <img src="image/beef.jpg" class="rounded-3 im-trainer" alt="" />
+              <h5 class="fw-bold mt-3">Makanan</h5>
+              <p>
+                  Makanan yang bagus dan sehat<br />
+                  untuk hewan peliharaan
+              </p></a
+            >
           </div>
         </div>
       </div>
     </div>
-    <!-- End Tips -->
+    <!-- akhir content -->
 
     <!-- Artikel -->
-    <div class="conteiner-fluid bg-secondary py-5">
-      <div class="container py-5">
-        <div class="row cnt-tips">
-          <div class="col-lg-4 col-md-6 col-sm-12 img-tips me-3" data-aos="fade-right"></div>
-          <div class="col-lg-8 col-md-6 col-sm-12 tips pt-5" data-aos="fade-left">
-            <h2>Kenapa Harus Rutin Merawat Hewan ?</h2>
-            <h5 class="mt-5">
-              Anda perlu memenuhi kebutuhannya, baik fisik maupun emosional.<br />
-              Ini berarti menyediakan makanan bergizi, air minum bersih, tempat tinggal,<br />
-              dan kesempatan untuk tinggal di rumah yang aman. Ini juga berarti <br />memastikan bahwa anjing senang dengan menyediakan banyak<br />
-              waktu bermain, banyak latihan, dan stimulasi untuk pikirannya.
-            </h5>
-          </div>
+    <div class="container-fluid kontenflu bg-secondary">
+      <div class="container d-flex align-items-center justify-content-between">
+      <div class="row text-center py-5">
+        <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"><img src="image/baptist-standaert-mx0DEnfYxic-unsplash 1.png" style="width: 340px;height: 350px;" class="img-artikel" alt=""></div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text-white artikel mt-5"data-aos="fade-down">
+          <h2>Kenapa Harus Rutin Merawat Hewan?</h2>
+          <h6 class="fw-normal">
+            Anda perlu memenuhi kebutuhannya, baik fisik maupun emosional.
+            Ini berarti menyediakan makanan bergizi, air minum bersih, tempat tinggal,
+            dan kesempatan untuk tinggal di rumah yang aman. Ini juga berarti memastikan bahwa anjing senang dengan menyediakan banyak<br />
+            waktu bermain, banyak latihan, dan stimulasi untuk pikirannya.
+          </h6>
         </div>
       </div>
     </div>
-    <!-- End Artikel -->
+    </div>
+<!-- End Artikel -->
 
+    <!-- Footer -->
     <div class="container-fluid text-center py-5">
-      <h2>Pilih Pelatih Anjing Terbaik yang Kami Miliki</h2>
-      <div class="container py-5">
+      <h2 class="" data-aos="zoom-in-down">Pilih Pelatih Anjing Terbaik yang Kami Miliki</h2>
+      <div class="container cnt-trainer py-3">
         <div class="row mt-5">
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
             <a href="" class="text-decoration-none text-dark">
@@ -132,7 +178,7 @@
               </p></a
             >
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in-up">
+          <div class="col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in-up">
             <a href="" class="text-decoration-none text-dark">
               <img src="image/user3.jpg" class="rounded-circle im-trainer" alt="" />
               <h3 class="fw-bold mt-3">FERDI</h3>
@@ -148,41 +194,35 @@
 
     <!-- FOOTER -->
 
-    <div class="container-fluid bg-dark py-5" id="footer-large">
+    <div class="container-fluid bg-dark py-5">
       <div class="container cnt-footer">
         <div class="row text-white">
-          <div class="row py-5 accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item col-lg-2 col-md-6 col-sm-12 offset-lg-1 border-0 my-3 bg-transparent">
+          <div class="row py-5">
+            <div class="col-lg-2 col-md-6 col-sm-12 offset-lg-1 border-0 my-3">
               <h5 class="">Overview</h5>
-              <div>
-                <div class="">
-                  <a href="" class="text-secondary text-decoration-none"><p>Shipping</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>Refund</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>Promotion</p></a>
-                </div>
+              <div class="">
+                <a href="" class="text-secondary text-decoration-none"><p>Shipping</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>Refund</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>Promotion</p></a>
               </div>
             </div>
-            <div class="accordion-item col-lg-2 col-md-6 col-sm-12 border-0 my-3 bg-transparent">
+            <div class="col-lg-2 col-md-6 col-sm-12 border-0 my-3">
               <h5 class="">Company</h5>
-              <div>
-                <div class="">
-                  <a href="" class="text-secondary text-decoration-none"><p>About</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>Career</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>Contact Us</p></a>
-                </div>
+              <div class="">
+                <a href="" class="text-secondary text-decoration-none"><p>About</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>Career</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>Contact Us</p></a>
               </div>
             </div>
-            <div class="accordion-item col-lg-2 col-md-6 col-sm-12 border-0 my-3 bg-transparent">
+            <div class="col-lg-2 col-md-6 col-sm-12 border-0 my-3">
               <h5 class="">Explore</h5>
-              <div>
-                <div class="">
-                  <a href="" class="text-secondary text-decoration-none"><p>Terms & Conds</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>Privacy Policy</p></a>
-                  <a href="" class="text-secondary text-decoration-none"><p>For Developer</p></a>
-                </div>
+              <div class="">
+                <a href="" class="text-secondary text-decoration-none"><p>Terms & Conds</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>Privacy Policy</p></a>
+                <a href="" class="text-secondary text-decoration-none"><p>For Developer</p></a>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 border-0 my-3 bg-transparent">
+            <div class="col-lg-3 col-md-6 col-sm-12 border-0 my-3">
               <h5>Find Us On Social media</h5>
               <a href="" class="text-white"><i class="fab fa-twitter fa-3x me-5 my-3"></i></a>
               <a href="" class="text-white"><i class="fab fa-facebook fa-3x me-5"></i></a>
@@ -192,6 +232,7 @@
         </div>
       </div>
     </div>
+
     <!-- End FOOTER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
